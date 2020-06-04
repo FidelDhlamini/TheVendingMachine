@@ -81,10 +81,41 @@ public class ExtendableVendingMachine {
             return StockLevel;
         }
     }
+
+    public void buyInBulk(Product product,int Qty){
+        if (product instanceof SaltySnack) {
+            if (SaltySnacks > 0) {
+                SaltySnacks -= Qty;
+            } else {
+                System.out.println("Salty Snacks are out of stock");
+            }
+        }
+
+        if (product instanceof Chocolate) {
+            if (Chocolates > 0) {
+                Chocolates -= Qty;
+            } else {
+                System.out.println("Chocolates are out of stock");
+            }
+        }
+
+        if (product instanceof SoftDrink) {
+            if (SoftDrinks > 0) {
+                SoftDrinks -= Qty;
+            } else {
+                System.out.println("Soft Drinks are out of stock");
+            }
+        }
+
+    }
+
     public static void main(String[] args) {
-        ExtendableVendingMachine extendableVendingMachine = new ExtendableVendingMachine(4,6,10);
-        extendableVendingMachine.buy(new SaltySnack());
+        ExtendableVendingMachine extendableVendingMachine = new ExtendableVendingMachine(4,20,10);
+        extendableVendingMachine.buyInBulk(new SaltySnack(),4);
+
         System.out.println(extendableVendingMachine.getStock(new SaltySnack()));
+
+
 
     }
 }

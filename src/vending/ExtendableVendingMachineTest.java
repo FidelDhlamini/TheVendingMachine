@@ -15,6 +15,7 @@ public class ExtendableVendingMachineTest {
         assertEquals(extendableVendingMachine.getStock(new SoftDrink()),9);
 
     }
+
     @Test
     public void ShouldBuyChocolate() {
         ExtendableVendingMachine extendableVendingMachine = new ExtendableVendingMachine(10,10,8);
@@ -31,6 +32,15 @@ public class ExtendableVendingMachineTest {
         extendableVendingMachine.addStock(new Chocolate());
         extendableVendingMachine.addStock(new Chocolate());
         assertEquals(extendableVendingMachine.getStock(new Chocolate()),14);
+
+    }
+
+
+    @Test
+    public void ShouldShowStockTotal() {
+        ExtendableVendingMachine extendableVendingMachine = new ExtendableVendingMachine(10,10,8);
+        extendableVendingMachine.getStock(new Product());
+        assertEquals(extendableVendingMachine.getStock(new Product()),28);
 
     }
 }

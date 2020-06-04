@@ -9,20 +9,28 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ExtendableVendingMachineTest {
 
     @Test
-    public void buySoftDrinkTest() {
+    public void ShouldBuySoftDrink() {
         ExtendableVendingMachine extendableVendingMachine = new ExtendableVendingMachine(10,10,10);
         extendableVendingMachine.buy(new SoftDrink());
         assertEquals(extendableVendingMachine.getStock(new SoftDrink()),9);
 
     }
     @Test
-    public void buyChocolateTest() {
+    public void ShouldBuyChocolate() {
         ExtendableVendingMachine extendableVendingMachine = new ExtendableVendingMachine(10,10,8);
         extendableVendingMachine.buy(new Chocolate());
         extendableVendingMachine.buy(new Chocolate());
         extendableVendingMachine.buy(new Chocolate());
         extendableVendingMachine.buy(new Chocolate());
         assertEquals(extendableVendingMachine.getStock(new Chocolate()),4);
+
+    }
+    @Test
+    public void ShouldAddChocolateToStock() {
+        ExtendableVendingMachine extendableVendingMachine = new ExtendableVendingMachine(10,10,8);
+        extendableVendingMachine.addStock(new Chocolate());
+        extendableVendingMachine.addStock(new Chocolate());
+        assertEquals(extendableVendingMachine.getStock(new Chocolate()),14);
 
     }
 }

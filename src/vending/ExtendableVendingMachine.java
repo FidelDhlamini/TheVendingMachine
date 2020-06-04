@@ -11,6 +11,12 @@ public class ExtendableVendingMachine {
     private int SoftDrinks;
     private int StockLevel;
 
+    public ExtendableVendingMachine(int SoftDrinks, int SaltySnacks, int Chocolates) {
+        this.SoftDrinks = SoftDrinks;
+        this.SaltySnacks = SaltySnacks;
+        this.Chocolates = Chocolates;
+    }
+
     public void buy(Product product) {
 
         if (product instanceof SaltySnack) {

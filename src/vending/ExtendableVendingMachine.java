@@ -80,7 +80,11 @@ public class ExtendableVendingMachine {
             StockLevel = 0;
             return StockLevel;
         }
-
+    }
+    public static void main(String[] args) {
+        ExtendableVendingMachine extendableVendingMachine = new ExtendableVendingMachine(4,6,10);
+        extendableVendingMachine.buy(new SaltySnack());
+        System.out.println(extendableVendingMachine.getStock(new SaltySnack()));
 
     }
 }

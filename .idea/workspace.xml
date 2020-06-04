@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3c1f3588-c04d-44d2-ba71-940551415257" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1coA3ejm8XyIPjk0BLFxfCMwSlA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
+      <recent name="$PROJECT_DIR$/tests/vending" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c1f3588-c04d-44d2-ba71-940551415257" name="Default Changelist" comment="" />
+      <created>1591184374340</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591184374340</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="575" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1591243253906">
+      <screen x="70" y="34" width="1850" height="1046" />
+    </state>
+    <state x="575" y="346" key="com.intellij.ide.util.TipDialog/70.34.1850.1046@70.34.1850.1046" timestamp="1591243253906" />
+    <state x="574" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1591239822255">
+      <screen x="70" y="34" width="1850" height="1046" />
+    </state>
+    <state x="574" y="45" width="840" height="1034" key="search.everywhere.popup/70.34.1850.1046@70.34.1850.1046" timestamp="1591239822255" />
+  </component>
+</project>

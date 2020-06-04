@@ -109,13 +109,26 @@ public class ExtendableVendingMachine {
 
     }
 
+    public void addManyToStock(Product product,int Qty) {
+        if (product instanceof SaltySnack) {
+            SaltySnacks += Qty;
+
+        }
+        if (product instanceof Chocolate) {
+            Chocolates += Qty;
+
+        }
+        if (product instanceof SoftDrink) {
+            SoftDrinks += Qty;
+        }
+    }
+
+
+
     public static void main(String[] args) {
         ExtendableVendingMachine extendableVendingMachine = new ExtendableVendingMachine(4,20,10);
-        extendableVendingMachine.buyInBulk(new SaltySnack(),4);
+        extendableVendingMachine.addManyToStock(new SaltySnack(),4);
 
         System.out.println(extendableVendingMachine.getStock(new SaltySnack()));
-
-
-
     }
 }
